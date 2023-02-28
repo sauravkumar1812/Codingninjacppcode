@@ -1,3 +1,4 @@
+//sum of two array with carry 
 #include <bits/stdc++.h>
 using namespace std;
 void sumOfTwoArrays(int *input1, int size1, int *input2, int size2, int *output)
