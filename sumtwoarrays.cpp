@@ -17,7 +17,7 @@ void sumOfTwoArrays(int *input1, int size1, int *input2, int size2, int *output)
         j--;
         k--;
     }
-
+// for size 1
     while (i >= 0)
     {
         int sum = input1[i] + carry;
@@ -27,7 +27,7 @@ void sumOfTwoArrays(int *input1, int size1, int *input2, int size2, int *output)
         i--;
         k--;
     }
-
+//for size 2
     while (j >= 0)
     {
         int sum = input2[j] + carry;
