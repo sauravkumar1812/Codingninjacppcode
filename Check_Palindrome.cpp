@@ -1,3 +1,4 @@
+//palindrome
 #include<bits/stdtr1c++.h>
 using namespace std;
 bool checkPalindrome(char str[]) {
