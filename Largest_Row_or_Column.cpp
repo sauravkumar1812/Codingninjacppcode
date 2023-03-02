@@ -11,7 +11,7 @@ void findLargest(int **input, int nRows, int mCols)
 {
     //Write your code here
    
-// For printing sum of column
+// For printing sum of row
 	int max=INT_MIN;
   int ans ='r';
   int index=0;
@@ -31,6 +31,7 @@ void findLargest(int **input, int nRows, int mCols)
          ans = 'r';
        }
   }
+  // printing sum of column
 for(int  j=0 ;j<mCols;j++){
     int sum=0;
      
