@@ -2,7 +2,59 @@
 #include <iostream>
 using namespace std;
 
+/*
+You can use minimum value of integer as -2147483647 and 
+maximum value of integer as 2147483647
+*/
+#include<bits/stdc++.h>
+void findLargest(int **input, int nRows, int mCols)
+{
+    //Write your code here
+   
+// For printing sum of column
+	int max=INT_MIN;
+  int ans ='r';
+  int index=0;
 
+  for (int j = 0; j < nRows; j++) {
+     int  sum = 0;
+      
+       for (int i = 0; i < mCols; i++) {
+
+         sum = sum + input[j][i];
+        
+       }
+
+       if (sum > max) {
+         max = sum;
+         index = j;
+         ans = 'r';
+       }
+  }
+for(int  j=0 ;j<mCols;j++){
+    int sum=0;
+     
+     for (int i = 0; i < nRows; i++) {
+
+       sum = sum + input[i][j];
+      
+     }
+     if (sum > max) {
+       max = sum;
+       index = j;
+       ans = 'c';
+     }
+}
+
+if (ans =='r')
+  cout << "row"
+       << " " << index << " " << max;
+
+else if (ans == 'c')
+  cout << "column"
+       << " " << index << " " << max;
+  
+}
 
 int main()
 {
