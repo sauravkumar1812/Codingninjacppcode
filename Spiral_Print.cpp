@@ -23,6 +23,7 @@ void spiralPrint(int **input, int nRows, int nCols)
            }
            nRows--;
          }
+         // for first column
          if(l<nCols){
           for(i=nRows-1;i>=k;--i){
             cout<<input[i][l]<<" ";
