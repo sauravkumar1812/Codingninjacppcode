@@ -6,6 +6,7 @@ void spiralPrint(int **input, int nRows, int nCols)
     //Write your code here
    int i, k=0,l=0;
    while(k<nRows && l< nCols){
+    // for first row
          for(i =l;i<nCols;++i){
            cout<<input[k][i]<<" ";
          }
