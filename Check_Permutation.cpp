@@ -6,12 +6,13 @@ bool isPermutation(char input1[], char input2[]) {
     // Write your code here
     string temp(input1);
     string newtemp(input2);
-
+  // find the length of string
     int a=temp.length();
     int b=newtemp.length();
     if (a != b) {
       return false;
     }
+    //sorting the string
     sort( temp.begin() , temp.end() );
     sort( newtemp.begin() , newtemp.end() );
 
