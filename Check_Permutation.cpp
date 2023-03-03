@@ -15,7 +15,7 @@ bool isPermutation(char input1[], char input2[]) {
     //sorting the string
     sort( temp.begin() , temp.end() );
     sort( newtemp.begin() , newtemp.end() );
-
+  // return type
     for (int i = 0; i < a;  i++)
       if (temp[i] != newtemp[i]) 
         return false;
