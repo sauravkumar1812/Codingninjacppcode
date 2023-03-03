@@ -16,6 +16,7 @@ void spiralPrint(int **input, int nRows, int nCols)
            cout<<input[i][nCols-1]<<" ";
          }
          nCols--;
+         //for last row
          if(k<nRows){
            for (i = nCols - 1; i >= l; --i) {
              cout << input[nRows - 1][i] << " ";
