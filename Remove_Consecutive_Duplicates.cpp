@@ -7,6 +7,7 @@ void removeConsecutiveDuplicates(char input[]) {
    int i = 0;
   int j = 1;
   int k = 0;
+  
   while(i<strlen(input)){
     input[k]=input[i];
     while(input[i]==input[j]){
