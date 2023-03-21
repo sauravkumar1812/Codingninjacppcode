@@ -1,3 +1,4 @@
+// Waves print question solution of cpp lecture 10 in coding ninja
 #include <iostream>
 using namespace std;
 
